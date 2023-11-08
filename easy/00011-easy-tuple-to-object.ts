@@ -18,6 +18,10 @@
   > View on GitHub: https://tsch.js.org/11
 */
 
+const myArray = [
+  { name: 'John', age: 120, group: 'user' },
+]
+type Group = typeof myArray[number]['group' | 'age']
 /* _____________ Your Code Here _____________ */
 
 type TupleToObject<T extends readonly string[]> = {
